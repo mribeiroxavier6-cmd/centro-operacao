@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agenda das Turmas · Portal Natura Avon</title><style>
+:root{
+  --azul:#5EA8F5; --azul-claro:#A3D4F6; --neutro:#EDE7E4;
+  --laranja:#F3A85C; --laranja-claro:#F7C89B; --roxo:#B79AD6;
+  --tinta:#2B2B33; --tinta-suave:#5A5A66; --linha:#E3DCD7;
+  --branco:#FFFFFF; --verde:#3E9E77; --verde-bg:#E7F5EF;
+  --vermelho:#D64541; --vermelho-bg:#FBE9E8; --ambar:#C98A1E; --ambar-bg:#FBF1DD;
+  --sombra:0 10px 30px rgba(43,43,51,.08); --raio:16px;
+  --grad:linear-gradient(120deg,#A3D4F6 0%,#EDE7E4 45%,#F7C89B 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--tinta);background:var(--neutro);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--grad);border-bottom:1px solid var(--linha)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;flex-wrap:wrap;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.2px}
+.brand .seal{width:40px;height:40px;border-radius:50%;background:var(--branco);display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:var(--sombra)}
+.brand small{display:block;font-weight:600;color:var(--tinta-suave);font-size:12px}
+.nav-back{font-size:13px;font-weight:600;color:var(--tinta);text-decoration:none;background:rgba(255,255,255,.7);padding:8px 14px;border-radius:999px;border:1px solid var(--linha)}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.4px}
+.pill.f1{background:var(--verde-bg);color:var(--verde)}
+.pill.f2{background:#EDE7FB;color:#6B4FB0}
+.card{background:var(--branco);border:1px solid var(--linha);border-radius:var(--raio);box-shadow:var(--sombra)}
+.section-title{font-size:20px;font-weight:800;margin-bottom:4px}
+.section-sub{color:var(--tinta-suave);font-size:14px;margin-bottom:18px}
+.reader-flag{display:inline-flex;align-items:center;gap:8px;background:#EAF3FF;color:#2C5EA6;border:1px solid #CFE2FB;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600}
+footer{color:var(--tinta-suave);font-size:12px;text-align:center;padding:28px 20px}
+.legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.legend .pill{cursor:default}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--laranja);color:#3a2410;font-weight:700;padding:11px 18px;border-radius:999px;text-decoration:none;border:none;box-shadow:var(--sombra);font-size:14px}
+.btn.ghost{background:var(--branco);border:1px solid var(--linha);color:var(--tinta)}
+</style></head><body>
+<div class="topbar"><div class="wrap">
+  <div class="brand"><span class="seal">🌸</span><div>Portal Núcleo Natura &amp; Avon<small>Escola Natura e Avon · Negócios com afeto</small></div></div>
+  <a class="nav-back" href="portal.html">← Voltar à capa</a>
+</div></div>
+<div class="wrap" style="padding-top:26px">
+  <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center">
+    <div><h1 class="section-title">Agenda das Turmas</h1>
+    <p class="section-sub">Visão da GV em modo leitor. A GV acompanha, não edita.</p></div>
+    <span class="reader-flag">🔒 Modo leitor · Acesso segmentado</span>
+  </div>
+
+  <div class="card" style="padding:14px 18px;margin-bottom:16px;display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+    <b>Você está vendo:</b> <span class="pill" style="background:var(--verde-bg);color:var(--verde)">GV EXEMPLO (fictícia)</span>
+    <span style="color:var(--tinta-suave);font-size:13px">Cada GV enxerga apenas a própria GV e os setores dela. Segmentação real por login = <span class="pill f2">Fase 2</span></span>
+  </div>
+
+  <div class="card" style="padding:0;overflow:auto">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;min-width:820px">
+      <thead><tr style="background:#FAF6F3;text-align:left">
+        <th style="padding:12px 14px;border-bottom:1px solid var(--linha);white-space:nowrap">Controle de turma</th><th style="padding:12px 14px;border-bottom:1px solid var(--linha);white-space:nowrap">Data</th><th style="padding:12px 14px;border-bottom:1px solid var(--linha);white-space:nowrap">Facilitador</th><th style="padding:12px 14px;border-bottom:1px solid var(--linha);white-space:nowrap">Modalidade</th><th style="padding:12px 14px;border-bottom:1px solid var(--linha);white-space:nowrap">Tema</th><th style="padding:12px 14px;border-bottom:1px solid var(--linha);white-space:nowrap">Setor</th><th style="padding:12px 14px;border-bottom:1px solid var(--linha);white-space:nowrap">GV</th><th style="padding:12px 14px;border-bottom:1px solid var(--linha);white-space:nowrap">Mercado</th><th style="padding:12px 14px;border-bottom:1px solid var(--linha);white-space:nowrap">Status</th>
+      </tr></thead>
+      <tbody><tr><td>T - EX01</td><td>23/03/2026</td><td>Ana (fic.)</td><td>Ao Vivo</td><td>Consultoria de Beleza</td><td>SETOR ALFA (fic.)</td><td>GV EXEMPLO (fictícia)</td><td>SP CAPITAL</td><td><span class="pill" style="background:#E7F5EF;color:#2E7D5B">Realizado</span></td></tr><tr><td>T - EX02</td><td>30/03/2026</td><td>Bruno (fic.)</td><td>Presencial</td><td>Liderança de Time</td><td>SETOR BETA (fic.)</td><td>GV EXEMPLO (fictícia)</td><td>SP CAPITAL</td><td><span class="pill" style="background:#EAF3FF;color:#2C5EA6">Aprovado</span></td></tr><tr><td>T - EX03</td><td>02/04/2026</td><td>Ana (fic.)</td><td>Ao Vivo</td><td>Negócios Digitais</td><td>SETOR GAMA (fic.)</td><td>GV EXEMPLO (fictícia)</td><td>SP CAPITAL</td><td><span class="pill" style="background:#FBE9E8;color:#C23B37">No show</span></td></tr><tr><td>T - EX04</td><td>09/04/2026</td><td>Carla (fic.)</td><td>Ao Vivo</td><td>Consultoria de Beleza</td><td>SETOR DELTA (fic.)</td><td>GV EXEMPLO (fictícia)</td><td>SP CAPITAL</td><td><span class="pill" style="background:#F1EEF2;color:#6B6675">Cancelado</span></td></tr><tr><td>T - EX05</td><td>14/04/2026</td><td>Bruno (fic.)</td><td>Presencial</td><td>Onboarding</td><td>SETOR ALFA (fic.)</td><td>GV EXEMPLO (fictícia)</td><td>SP CAPITAL</td><td><span class="pill" style="background:#FBF1DD;color:#9A6A12">Aguardando aprovação</span></td></tr><tr><td>T - EX06</td><td>21/04/2026</td><td>Ana (fic.)</td><td>Ao Vivo</td><td>Consultoria de Beleza</td><td>SETOR BETA (fic.)</td><td>GV EXEMPLO (fictícia)</td><td>SP CAPITAL</td><td><span class="pill" style="background:#E7F5EF;color:#2E7D5B">Realizado</span></td></tr></tbody>
+    </table>
+  </div>
+  <p style="font-size:12px;color:var(--tinta-suave);margin-top:8px">Dados fictícios de exemplo. Colunas espelham a base real (Agenda de Facilitação).</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:20px">
+    <div class="card" style="padding:20px">
+      <span class="pill f1">Fase 1 · dado que já temos</span>
+      <h3 style="margin:12px 0 6px">Taxa de realização</h3>
+      <p style="color:var(--tinta-suave);font-size:13px">Calculada de Realizado / No show / Cancelado (já está na base).</p>
+      <div style="display:flex;gap:14px;margin-top:14px;flex-wrap:wrap">
+        <div><div style="font-size:26px;font-weight:800;color:var(--verde)">2</div><small>Realizado</small></div>
+        <div><div style="font-size:26px;font-weight:800;color:#C23B37">1</div><small>No show</small></div>
+        <div><div style="font-size:26px;font-weight:800;color:#6B6675">1</div><small>Cancelado</small></div>
+      </div>
+      <p style="font-size:12px;color:var(--tinta-suave);margin-top:10px">Ex.: 2 de 4 turmas com desfecho = 50% de realização (números fictícios).</p>
+    </div>
+
+    <div class="card" style="padding:20px">
+      <span class="pill f2">Fase 2 · fecha o ciclo</span>
+      <h3 style="margin:12px 0 6px">NPS da turma</h3>
+      <p style="color:var(--tinta-suave);font-size:13px">Participante responde sobre a turma via formulário.</p>
+      <a class="btn" href="#" onclick="return false" style="margin-top:14px">📝 Responder NPS (Google Form)</a>
+      <p style="font-size:12px;color:var(--tinta-suave);margin-top:10px">Placeholder. A nota de satisfação e o <b>retorno automático</b> desse dado ao painel = Fase 2.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin:22px 0;padding:20px">
+    <b>Legenda de fases</b>
+    <div class="legend">
+      <span class="pill f1">Fase 1 · taxa de realização (já temos)</span>
+      <span class="pill f2">Fase 2 · nota via form + retorno automático + acesso por login</span>
+    </div>
+    <p style="color:var(--tinta-suave);font-size:13px;margin-top:10px">Honesto: Google Forms coleta, mas não atualiza o painel sozinho.</p>
+  </div>
+</div>
+<footer>Maquete conceitual (não funcional) · Núcleo Natura &amp; Avon · Afferolab · Dados de exemplo, fictícios · Arquitetura modular: arquivos independentes</footer></body></html>

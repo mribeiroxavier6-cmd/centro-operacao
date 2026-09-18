@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Setores · Validação de cadastro · Portal Natura Avon</title><style>
+:root{
+  --azul:#5EA8F5; --azul-claro:#A3D4F6; --neutro:#EDE7E4;
+  --laranja:#F3A85C; --laranja-claro:#F7C89B; --roxo:#B79AD6;
+  --tinta:#2B2B33; --tinta-suave:#5A5A66; --linha:#E3DCD7;
+  --branco:#FFFFFF; --verde:#3E9E77; --verde-bg:#E7F5EF;
+  --vermelho:#D64541; --vermelho-bg:#FBE9E8; --ambar:#C98A1E; --ambar-bg:#FBF1DD;
+  --sombra:0 10px 30px rgba(43,43,51,.08); --raio:16px;
+  --grad:linear-gradient(120deg,#A3D4F6 0%,#EDE7E4 45%,#F7C89B 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--tinta);background:var(--neutro);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--grad);border-bottom:1px solid var(--linha)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;flex-wrap:wrap;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.2px}
+.brand .seal{width:40px;height:40px;border-radius:50%;background:var(--branco);display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:var(--sombra)}
+.brand small{display:block;font-weight:600;color:var(--tinta-suave);font-size:12px}
+.nav-back{font-size:13px;font-weight:600;color:var(--tinta);text-decoration:none;background:rgba(255,255,255,.7);padding:8px 14px;border-radius:999px;border:1px solid var(--linha)}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.4px}
+.pill.f1{background:var(--verde-bg);color:var(--verde)}
+.pill.f2{background:#EDE7FB;color:#6B4FB0}
+.card{background:var(--branco);border:1px solid var(--linha);border-radius:var(--raio);box-shadow:var(--sombra)}
+.section-title{font-size:20px;font-weight:800;margin-bottom:4px}
+.section-sub{color:var(--tinta-suave);font-size:14px;margin-bottom:18px}
+.reader-flag{display:inline-flex;align-items:center;gap:8px;background:#EAF3FF;color:#2C5EA6;border:1px solid #CFE2FB;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600}
+footer{color:var(--tinta-suave);font-size:12px;text-align:center;padding:28px 20px}
+.legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.legend .pill{cursor:default}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--laranja);color:#3a2410;font-weight:700;padding:11px 18px;border-radius:999px;text-decoration:none;border:none;box-shadow:var(--sombra);font-size:14px}
+.btn.ghost{background:var(--branco);border:1px solid var(--linha);color:var(--tinta)}
+</style></head><body>
+<div class="topbar"><div class="wrap">
+  <div class="brand"><span class="seal">🌸</span><div>Portal Núcleo Natura &amp; Avon<small>Escola Natura e Avon · Negócios com afeto</small></div></div>
+  <a class="nav-back" href="portal.html">← Voltar à capa</a>
+</div></div>
+<div class="wrap" style="padding-top:26px">
+  <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center">
+    <div><h1 class="section-title">Setores · Validação de cadastro</h1>
+    <p class="section-sub">A GV confere se Setor / GV estão corretos e atualiza o que estiver errado.</p></div>
+    <span class="reader-flag">🔒 Acesso segmentado por GV</span>
+  </div>
+
+  <div class="card" style="padding:16px 20px;margin-bottom:16px;border-left:4px solid var(--laranja)">
+    <b>Por que esta tela existe:</b> hoje o dado envelhece e ninguém sabe quando foi atualizado (a base tem um "Última atualização" manual no topo). <b>Cadastro errado = contagem errada para a própria dona do dado.</b> O portal com formulário + carimbo colorido deixa o dado velho à vista.
+  </div>
+
+  <div class="card" style="padding:14px 18px;margin-bottom:16px;display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+    <b>GV:</b> <span class="pill" style="background:var(--verde-bg);color:var(--verde)">GV EXEMPLO (fictícia)</span>
+    <span style="color:var(--tinta-suave);font-size:13px">Contexto real: ~717 setores, cada um com coordenador regional, email e telefone. Muitos donos, uma tela, acesso segmentado.</span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+    
+    <div class="card" style="padding:18px 20px">
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start">
+        <div>
+          <h3 style="margin-bottom:4px">SETOR ALFA (fic.)</h3>
+          <p style="color:var(--tinta-suave);font-size:13px">Código: <b>EX-001</b> · Coordenador(a): Coord. Ana (fic.)</p>
+        </div>
+        <span class="pill" style="background:var(--verde-bg);color:var(--verde)">✓ Última atualização: 10/04/2026</span>
+      </div>
+      <a class="btn ghost" href="#" onclick="return false" style="margin-top:14px">📝 Confirmar / corrigir cadastro (Google Form)</a>
+    </div>
+    <div class="card" style="padding:18px 20px">
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start">
+        <div>
+          <h3 style="margin-bottom:4px">SETOR BETA (fic.)</h3>
+          <p style="color:var(--tinta-suave);font-size:13px">Código: <b>EX-002</b> · Coordenador(a): Coord. Bruno (fic.)</p>
+        </div>
+        <span class="pill" style="background:var(--vermelho-bg);color:var(--vermelho)">⚠ Última atualização: 02/01/2026 · +30 dias</span>
+      </div>
+      <a class="btn ghost" href="#" onclick="return false" style="margin-top:14px">📝 Confirmar / corrigir cadastro (Google Form)</a>
+    </div>
+    <div class="card" style="padding:18px 20px">
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start">
+        <div>
+          <h3 style="margin-bottom:4px">SETOR GAMA (fic.)</h3>
+          <p style="color:var(--tinta-suave);font-size:13px">Código: <b>EX-003</b> · Coordenador(a): Coord. Carla (fic.)</p>
+        </div>
+        <span class="pill" style="background:var(--verde-bg);color:var(--verde)">✓ Última atualização: 15/04/2026</span>
+      </div>
+      <a class="btn ghost" href="#" onclick="return false" style="margin-top:14px">📝 Confirmar / corrigir cadastro (Google Form)</a>
+    </div>
+    <div class="card" style="padding:18px 20px">
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start">
+        <div>
+          <h3 style="margin-bottom:4px">SETOR DELTA (fic.)</h3>
+          <p style="color:var(--tinta-suave);font-size:13px">Código: <b>EX-004</b> · Coordenador(a): Coord. Diego (fic.)</p>
+        </div>
+        <span class="pill" style="background:var(--vermelho-bg);color:var(--vermelho)">⚠ Última atualização: 20/11/2025 · +30 dias</span>
+      </div>
+      <a class="btn ghost" href="#" onclick="return false" style="margin-top:14px">📝 Confirmar / corrigir cadastro (Google Form)</a>
+    </div>
+  </div>
+
+  <div class="card" style="margin:22px 0;padding:18px 20px">
+    <b>Legenda do carimbo</b>
+    <div class="legend">
+      <span class="pill" style="background:var(--verde-bg);color:var(--verde)">✓ Atualizado (≤30 dias)</span>
+      <span class="pill" style="background:var(--vermelho-bg);color:var(--vermelho)">⚠ Dado velho (+30 dias)</span>
+    </div>
+  </div>
+
+  <div class="card" style="margin:0 0 24px;padding:18px 20px">
+    <b>Legenda de fases</b>
+    <div class="legend">
+      <span class="pill f1">Fase 1 · coleta/confirmação via Google Form</span>
+      <span class="pill f2">Fase 2 · dado volta sozinho ao painel (sem puxar da planilha na mão)</span>
+    </div>
+    <p style="color:var(--tinta-suave);font-size:13px;margin-top:10px">Fase 2 a decidir em reunião. Honesto: Google Forms coleta, mas não atualiza o painel sozinho.</p>
+  </div>
+</div>
+<footer>Maquete conceitual (não funcional) · Núcleo Natura &amp; Avon · Afferolab · Dados de exemplo, fictícios · Arquitetura modular: arquivos independentes</footer></body></html>
